@@ -6,4 +6,12 @@
 //  Copyright © 2020 mac. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension WeatherDetailViewController: UIGestureRecognizerDelegate {
+ 
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
+    }
+    
+}

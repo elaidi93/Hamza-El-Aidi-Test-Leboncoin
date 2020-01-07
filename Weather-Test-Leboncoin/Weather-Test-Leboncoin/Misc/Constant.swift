@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class Constant {
+    
+    static let api_url = ""
+    
+}
