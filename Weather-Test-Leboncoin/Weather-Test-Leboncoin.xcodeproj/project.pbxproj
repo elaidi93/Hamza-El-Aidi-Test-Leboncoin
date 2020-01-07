@@ -16,6 +16,7 @@
 		BB10122023BFA8790060366A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB10121E23BFA8790060366A /* LaunchScreen.storyboard */; };
 		BB10122B23BFA8790060366A /* Weather_Test_LeboncoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10122A23BFA8790060366A /* Weather_Test_LeboncoinTests.swift */; };
 		BB10123623BFA8790060366A /* Weather_Test_LeboncoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10123523BFA8790060366A /* Weather_Test_LeboncoinUITests.swift */; };
+		BBA3838723C535A500E9C138 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3838623C535A500E9C138 /* LocationManager.swift */; };
 		BBFB802623C2365C00FA75C1 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */; };
 		BBFB802823C2368E00FA75C1 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */; };
 		BBFB802B23C23B3100FA75C1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802A23C23B3100FA75C1 /* Constant.swift */; };
@@ -60,6 +61,7 @@
 		BB10123123BFA8790060366A /* Weather-Test-LeboncoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather-Test-LeboncoinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB10123523BFA8790060366A /* Weather_Test_LeboncoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_Test_LeboncoinUITests.swift; sourceTree = "<group>"; };
 		BB10123723BFA8790060366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA3838623C535A500E9C138 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
 		BBFB802A23C23B3100FA75C1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -119,6 +121,8 @@
 		BB10120F23BFA8780060366A /* Weather-Test-Leboncoin */ = {
 			isa = PBXGroup;
 			children = (
+				BBA3838823C5365800E9C138 /* WebServices */,
+				BBA3838523C5358E00E9C138 /* Location Manager */,
 				BBFB802E23C2444100FA75C1 /* Images */,
 				BBFB802923C23A0500FA75C1 /* Misc */,
 				BBFB802423C2349100FA75C1 /* Resources */,
@@ -146,6 +150,21 @@
 				BB10123723BFA8790060366A /* Info.plist */,
 			);
 			path = "Weather-Test-LeboncoinUITests";
+			sourceTree = "<group>";
+		};
+		BBA3838523C5358E00E9C138 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BBA3838623C535A500E9C138 /* LocationManager.swift */,
+			);
+			path = "Location Manager";
+			sourceTree = "<group>";
+		};
+		BBA3838823C5365800E9C138 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 		BBFB802023C2344100FA75C1 /* Views */ = {
@@ -359,6 +378,7 @@
 				BBFB802B23C23B3100FA75C1 /* Constant.swift in Sources */,
 				BB10121523BFA8780060366A /* HomeViewController.swift in Sources */,
 				BBFB802623C2365C00FA75C1 /* WeatherDetail.swift in Sources */,
+				BBA3838723C535A500E9C138 /* LocationManager.swift in Sources */,
 				BBFB802D23C23B3C00FA75C1 /* Extensions.swift in Sources */,
 				BBFB802823C2368E00FA75C1 /* WeatherDetailViewModel.swift in Sources */,
 				BB10121123BFA8780060366A /* AppDelegate.swift in Sources */,
