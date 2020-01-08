@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WeatherDetail {
+class WeatherDetailModel {
     
     private let _date: String!
     private let _temperature: Double!
@@ -29,7 +29,7 @@ class WeatherDetail {
     }
     
     func getDate() -> String { return _date }
-    func getTemperatur() -> Double { return _temperature }
+    func getTemperature() -> Double { return _temperature }
     func getPluie() -> Double { return _pluie }
     func getHumidite() -> Double { return _humidite }
     func getPression() -> Double { return _pression }
