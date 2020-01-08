@@ -10,12 +10,12 @@ import UIKit
 import CoreLocation
 
 class HomeViewController: UIViewController {
+    
+    let list = [WeatherDetail]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         instanciateLocationManager()
-        
     }
 
     func instanciateLocationManager() {
@@ -23,12 +23,21 @@ class HomeViewController: UIViewController {
         LocationManager.shared.startTracking()
         LocationManager.shared.delegate = self
     }
+    
+    func updateTable() {
+        
+    }
 
 }
 
 extension HomeViewController: LocationManagerDelegate {
     func locationManager(didUpdate locations: [CLLocation]) {
         let userLocation :CLLocation = locations[0] as CLLocation
-        print("\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)")
+        let latitude = userLocation.coordinate.latitude
+        let longitude = userLocation.coordinate.longitude
+        PrevisionService.shared.request(latitude: "\(latitude)", longitude: "\(longitude)") { (list) in
+            self.updateTable()
+        }
+        
     }
 }

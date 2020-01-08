@@ -11,7 +11,7 @@ import UIKit
 extension WeatherDetailViewController: UIGestureRecognizerDelegate {
  
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return false
+        return true
     }
     
 }

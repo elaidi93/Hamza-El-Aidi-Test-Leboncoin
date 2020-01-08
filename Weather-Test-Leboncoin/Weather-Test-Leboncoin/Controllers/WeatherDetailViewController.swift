@@ -12,10 +12,15 @@ class WeatherDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpNavigationGesture()
+    }
+    
+    func setUpNavigationGesture() {
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
-
+    @IBAction func back(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 

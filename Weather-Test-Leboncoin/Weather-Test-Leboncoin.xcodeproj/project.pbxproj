@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ADE1C6BA37EAA6163ACB4C2 /* Pods_Weather_Test_LeboncoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFB43FEB06493E2F3DF683C /* Pods_Weather_Test_LeboncoinTests.framework */; };
+		4AA285B6AF97D3F9F3B4EC5F /* Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E3628F326FBE3104E9C895 /* Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework */; };
+		544B619E48DAB3BE29BDAAB6 /* Pods_Weather_Test_Leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75B5A8E2035FE24C3C588B4 /* Pods_Weather_Test_Leboncoin.framework */; };
 		BB10121123BFA8780060366A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10121023BFA8780060366A /* AppDelegate.swift */; };
 		BB10121323BFA8780060366A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10121223BFA8780060366A /* SceneDelegate.swift */; };
 		BB10121523BFA8780060366A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10121423BFA8780060366A /* HomeViewController.swift */; };
@@ -17,6 +20,7 @@
 		BB10122B23BFA8790060366A /* Weather_Test_LeboncoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10122A23BFA8790060366A /* Weather_Test_LeboncoinTests.swift */; };
 		BB10123623BFA8790060366A /* Weather_Test_LeboncoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10123523BFA8790060366A /* Weather_Test_LeboncoinUITests.swift */; };
 		BBA3838723C535A500E9C138 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3838623C535A500E9C138 /* LocationManager.swift */; };
+		BBA3838A23C55A2200E9C138 /* PrevisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3838923C55A2200E9C138 /* PrevisionService.swift */; };
 		BBFB802623C2365C00FA75C1 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */; };
 		BBFB802823C2368E00FA75C1 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */; };
 		BBFB802B23C23B3100FA75C1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802A23C23B3100FA75C1 /* Constant.swift */; };
@@ -46,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07ED3C4D56A0253080DEBBA0 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.release.xcconfig"; path = "Target Support Files/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B4B2B4DD834B245D484B902 /* Pods-Weather-Test-LeboncoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-LeboncoinTests.release.xcconfig"; path = "Target Support Files/Pods-Weather-Test-LeboncoinTests/Pods-Weather-Test-LeboncoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		66D2DF45611BE8DF936CF66A /* Pods-Weather-Test-Leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-Leboncoin.debug.xcconfig"; path = "Target Support Files/Pods-Weather-Test-Leboncoin/Pods-Weather-Test-Leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
+		78E3628F326FBE3104E9C895 /* Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1AC7901595C90D66BCD822 /* Pods-Weather-Test-Leboncoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-Leboncoin.release.xcconfig"; path = "Target Support Files/Pods-Weather-Test-Leboncoin/Pods-Weather-Test-Leboncoin.release.xcconfig"; sourceTree = "<group>"; };
+		9BFB43FEB06493E2F3DF683C /* Pods_Weather_Test_LeboncoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Test_LeboncoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB10120D23BFA8780060366A /* Weather-Test-Leboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-Test-Leboncoin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB10121023BFA8780060366A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB10121223BFA8780060366A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 		BB10123523BFA8790060366A /* Weather_Test_LeboncoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_Test_LeboncoinUITests.swift; sourceTree = "<group>"; };
 		BB10123723BFA8790060366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA3838623C535A500E9C138 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BBA3838923C55A2200E9C138 /* PrevisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionService.swift; sourceTree = "<group>"; };
 		BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
 		BBFB802A23C23B3100FA75C1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -71,6 +82,9 @@
 		BBFB803623C24B6300FA75C1 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		BBFB803823C24BC400FA75C1 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		BBFB803A23C2500E00FA75C1 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		CEB032DC5C0782204B0D42D6 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75B5A8E2035FE24C3C588B4 /* Pods_Weather_Test_Leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Test_Leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6BAA85EA0EC1AC9A249C55 /* Pods-Weather-Test-LeboncoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Test-LeboncoinTests.debug.xcconfig"; path = "Target Support Files/Pods-Weather-Test-LeboncoinTests/Pods-Weather-Test-LeboncoinTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544B619E48DAB3BE29BDAAB6 /* Pods_Weather_Test_Leboncoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADE1C6BA37EAA6163ACB4C2 /* Pods_Weather_Test_LeboncoinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +108,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA285B6AF97D3F9F3B4EC5F /* Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		428EED7F38608234498A0E82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D2DF45611BE8DF936CF66A /* Pods-Weather-Test-Leboncoin.debug.xcconfig */,
+				7D1AC7901595C90D66BCD822 /* Pods-Weather-Test-Leboncoin.release.xcconfig */,
+				CEB032DC5C0782204B0D42D6 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.debug.xcconfig */,
+				07ED3C4D56A0253080DEBBA0 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.release.xcconfig */,
+				ED6BAA85EA0EC1AC9A249C55 /* Pods-Weather-Test-LeboncoinTests.debug.xcconfig */,
+				0B4B2B4DD834B245D484B902 /* Pods-Weather-Test-LeboncoinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84F8F5F6945231063DB5036E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E75B5A8E2035FE24C3C588B4 /* Pods_Weather_Test_Leboncoin.framework */,
+				78E3628F326FBE3104E9C895 /* Pods_Weather_Test_Leboncoin_Weather_Test_LeboncoinUITests.framework */,
+				9BFB43FEB06493E2F3DF683C /* Pods_Weather_Test_LeboncoinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB10120423BFA8780060366A = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +145,8 @@
 				BB10122923BFA8790060366A /* Weather-Test-LeboncoinTests */,
 				BB10123423BFA8790060366A /* Weather-Test-LeboncoinUITests */,
 				BB10120E23BFA8780060366A /* Products */,
+				428EED7F38608234498A0E82 /* Pods */,
+				84F8F5F6945231063DB5036E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +205,7 @@
 		BBA3838823C5365800E9C138 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				BBA3838923C55A2200E9C138 /* PrevisionService.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -248,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB10123A23BFA8790060366A /* Build configuration list for PBXNativeTarget "Weather-Test-Leboncoin" */;
 			buildPhases = (
+				ADBC5D292AECAA2B8871158F /* [CP] Check Pods Manifest.lock */,
 				BB10120923BFA8780060366A /* Sources */,
 				BB10120A23BFA8780060366A /* Frameworks */,
 				BB10120B23BFA8780060366A /* Resources */,
+				F49FE86E50163B7246853093 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB10123D23BFA8790060366A /* Build configuration list for PBXNativeTarget "Weather-Test-LeboncoinTests" */;
 			buildPhases = (
+				673FF9FDA2BB0D255D1905EC /* [CP] Check Pods Manifest.lock */,
 				BB10122223BFA8790060366A /* Sources */,
 				BB10122323BFA8790060366A /* Frameworks */,
 				BB10122423BFA8790060366A /* Resources */,
@@ -283,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB10124023BFA8790060366A /* Build configuration list for PBXNativeTarget "Weather-Test-LeboncoinUITests" */;
 			buildPhases = (
+				543A59F20E2BCDFE9F9B5382 /* [CP] Check Pods Manifest.lock */,
 				BB10122D23BFA8790060366A /* Sources */,
 				BB10122E23BFA8790060366A /* Frameworks */,
 				BB10122F23BFA8790060366A /* Resources */,
+				A47A6AFB9EB88D656AF2758B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,12 +418,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		543A59F20E2BCDFE9F9B5382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673FF9FDA2BB0D255D1905EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather-Test-LeboncoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47A6AFB9EB88D656AF2758B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests/Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBC5D292AECAA2B8871158F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather-Test-Leboncoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F49FE86E50163B7246853093 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin/Pods-Weather-Test-Leboncoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin/Pods-Weather-Test-Leboncoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather-Test-Leboncoin/Pods-Weather-Test-Leboncoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB10120923BFA8780060366A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BBFB802B23C23B3100FA75C1 /* Constant.swift in Sources */,
+				BBA3838A23C55A2200E9C138 /* PrevisionService.swift in Sources */,
 				BB10121523BFA8780060366A /* HomeViewController.swift in Sources */,
 				BBFB802623C2365C00FA75C1 /* WeatherDetail.swift in Sources */,
 				BBA3838723C535A500E9C138 /* LocationManager.swift in Sources */,
@@ -556,6 +708,7 @@
 		};
 		BB10123B23BFA8790060366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D2DF45611BE8DF936CF66A /* Pods-Weather-Test-Leboncoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +727,7 @@
 		};
 		BB10123C23BFA8790060366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1AC7901595C90D66BCD822 /* Pods-Weather-Test-Leboncoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +746,7 @@
 		};
 		BB10123E23BFA8790060366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6BAA85EA0EC1AC9A249C55 /* Pods-Weather-Test-LeboncoinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -614,6 +769,7 @@
 		};
 		BB10123F23BFA8790060366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4B2B4DD834B245D484B902 /* Pods-Weather-Test-LeboncoinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +792,7 @@
 		};
 		BB10124123BFA8790060366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB032DC5C0782204B0D42D6 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +813,7 @@
 		};
 		BB10124223BFA8790060366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07ED3C4D56A0253080DEBBA0 /* Pods-Weather-Test-Leboncoin-Weather-Test-LeboncoinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
