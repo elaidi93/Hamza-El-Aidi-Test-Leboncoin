@@ -38,6 +38,13 @@ extension HomeViewController: LocationManagerDelegate {
         PrevisionService.shared.request(latitude: "\(latitude)", longitude: "\(longitude)") { (list) in
             self.updateTable()
         }
-        
+    }
+    
+    func locationManagerNotUpdate() {
+        let latitude = "48.85341"
+        let longitude = "2.3488"
+        PrevisionService.shared.request(latitude: "\(latitude)", longitude: "\(longitude)") { (list) in
+            self.updateTable()
+        }
     }
 }

@@ -16,8 +16,10 @@ class PrevisionService {
     func request(latitude: String, longitude: String, callback: @escaping (Any)->()) {
         let url = Constant.api_url_with(latitude: latitude, longitude: longitude)
         AF.request(url).responseJSON { response in
-            if let json = response.value as? NSDictionary {
-                print("JSON: \(json)") // serialized json response
+            if response.response?.statusCode == 200 {
+                if let json = response.value as? NSDictionary {
+                    PrevisionJsonParse.shared.parse(prevesion: json)
+                }
             }
         }
     }

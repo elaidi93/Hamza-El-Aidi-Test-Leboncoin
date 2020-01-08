@@ -21,6 +21,8 @@
 		BB10123623BFA8790060366A /* Weather_Test_LeboncoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10123523BFA8790060366A /* Weather_Test_LeboncoinUITests.swift */; };
 		BBA3838723C535A500E9C138 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3838623C535A500E9C138 /* LocationManager.swift */; };
 		BBA3838A23C55A2200E9C138 /* PrevisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3838923C55A2200E9C138 /* PrevisionService.swift */; };
+		BBC294E623C5FB2000022530 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC294E523C5FB2000022530 /* DataManager.swift */; };
+		BBC294E923C6065B00022530 /* PrevisionJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC294E823C6065B00022530 /* PrevisionJsonParse.swift */; };
 		BBFB802623C2365C00FA75C1 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */; };
 		BBFB802823C2368E00FA75C1 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */; };
 		BBFB802B23C23B3100FA75C1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB802A23C23B3100FA75C1 /* Constant.swift */; };
@@ -73,6 +75,8 @@
 		BB10123723BFA8790060366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA3838623C535A500E9C138 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BBA3838923C55A2200E9C138 /* PrevisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionService.swift; sourceTree = "<group>"; };
+		BBC294E523C5FB2000022530 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BBC294E823C6065B00022530 /* PrevisionJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionJsonParse.swift; sourceTree = "<group>"; };
 		BBFB802523C2365C00FA75C1 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		BBFB802723C2368E00FA75C1 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
 		BBFB802A23C23B3100FA75C1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 		BB10120F23BFA8780060366A /* Weather-Test-Leboncoin */ = {
 			isa = PBXGroup;
 			children = (
+				BBC294E723C6062800022530 /* Parsed */,
+				BBC294E423C5FB0D00022530 /* Data Manager */,
 				BBA3838823C5365800E9C138 /* WebServices */,
 				BBA3838523C5358E00E9C138 /* Location Manager */,
 				BBFB802E23C2444100FA75C1 /* Images */,
@@ -208,6 +214,22 @@
 				BBA3838923C55A2200E9C138 /* PrevisionService.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		BBC294E423C5FB0D00022530 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BBC294E523C5FB2000022530 /* DataManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		BBC294E723C6062800022530 /* Parsed */ = {
+			isa = PBXGroup;
+			children = (
+				BBC294E823C6065B00022530 /* PrevisionJsonParse.swift */,
+			);
+			path = Parsed;
 			sourceTree = "<group>";
 		};
 		BBFB802023C2344100FA75C1 /* Views */ = {
@@ -537,7 +559,9 @@
 				BBFB803923C24BC400FA75C1 /* WeatherTableViewCell.swift in Sources */,
 				BB10121B23BFA8780060366A /* Weather_Test_Leboncoin.xcdatamodeld in Sources */,
 				BBFB803B23C2500E00FA75C1 /* WeatherDetailViewController.swift in Sources */,
+				BBC294E623C5FB2000022530 /* DataManager.swift in Sources */,
 				BB10121323BFA8780060366A /* SceneDelegate.swift in Sources */,
+				BBC294E923C6065B00022530 /* PrevisionJsonParse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import CoreLocation
 
 protocol LocationManagerDelegate: class {
     func locationManager(didUpdate locations: [CLLocation])
+    func locationManagerNotUpdate()
 }
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
@@ -44,5 +45,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error \(error.localizedDescription)")
+        delegate?.locationManagerNotUpdate()
     } 
 }
