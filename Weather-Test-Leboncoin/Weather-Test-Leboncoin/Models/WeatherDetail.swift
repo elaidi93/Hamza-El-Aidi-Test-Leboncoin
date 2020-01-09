@@ -28,8 +28,10 @@ class WeatherDetailModel {
         _neige = neige
     }
     
+    
+    
     func getDate() -> String { return _date }
-    func getTemperature() -> Double { return _temperature }
+    func getTemperature() -> Int { return Int(_temperature) }
     func getPluie() -> Double { return _pluie }
     func getHumidite() -> Double { return _humidite }
     func getPression() -> Double { return _pression }

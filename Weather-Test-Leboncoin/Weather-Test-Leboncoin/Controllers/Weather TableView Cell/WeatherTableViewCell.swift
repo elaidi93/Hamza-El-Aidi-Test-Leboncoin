@@ -9,10 +9,13 @@
 import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var previsionDescrition: UILabel!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var container: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +23,15 @@ class WeatherTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        container.layer.cornerRadius = container.frame.height / 3
+        container.layer.borderColor = UIColor.black.cgColor
+        container.layer.borderWidth = 1
+        
+    }
+    
+    
 
 }

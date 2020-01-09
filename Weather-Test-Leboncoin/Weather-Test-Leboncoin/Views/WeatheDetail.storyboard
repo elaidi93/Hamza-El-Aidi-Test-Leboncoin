@@ -46,19 +46,43 @@
                                     <constraint firstItem="8Z8-w7-SOd" firstAttribute="centerY" secondItem="Ba2-Bp-uqf" secondAttribute="centerY" id="vV7-0e-yRZ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OD7-2U-CUk">
+                                <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-11-tKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.95294117649999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tuZ-11-tKa" secondAttribute="trailing" id="5Ag-Va-JlM"/>
+                                    <constraint firstItem="tuZ-11-tKa" firstAttribute="top" secondItem="OD7-2U-CUk" secondAttribute="top" id="Gg7-vy-R8E"/>
+                                    <constraint firstItem="tuZ-11-tKa" firstAttribute="leading" secondItem="OD7-2U-CUk" secondAttribute="leading" id="Wke-Fb-u7N"/>
+                                    <constraint firstAttribute="bottom" secondItem="tuZ-11-tKa" secondAttribute="bottom" id="fzx-rm-kVn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96051472429999996" green="0.41780793669999999" blue="0.1660998464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ba2-Bp-uqf" firstAttribute="leading" secondItem="wFU-fe-DN5" secondAttribute="leading" id="0Qk-MD-A2b"/>
+                            <constraint firstItem="wFU-fe-DN5" firstAttribute="bottom" secondItem="OD7-2U-CUk" secondAttribute="bottom" id="PbI-hJ-7dL"/>
+                            <constraint firstItem="OD7-2U-CUk" firstAttribute="top" secondItem="Ba2-Bp-uqf" secondAttribute="bottom" constant="8" symbolic="YES" id="RLc-9p-NIe"/>
                             <constraint firstItem="Ba2-Bp-uqf" firstAttribute="top" secondItem="wFU-fe-DN5" secondAttribute="top" id="dP9-z8-dww"/>
+                            <constraint firstItem="wFU-fe-DN5" firstAttribute="trailing" secondItem="OD7-2U-CUk" secondAttribute="trailing" id="fHb-Oi-25Y"/>
                             <constraint firstItem="wFU-fe-DN5" firstAttribute="trailing" secondItem="Ba2-Bp-uqf" secondAttribute="trailing" id="ngX-Dr-CHo"/>
+                            <constraint firstItem="OD7-2U-CUk" firstAttribute="leading" secondItem="wFU-fe-DN5" secondAttribute="leading" id="qbi-RM-JFX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wFU-fe-DN5"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tuZ-11-tKa" id="w9r-nA-oJG"/>
+                        <outlet property="titleDate" destination="lBs-Ne-AbR" id="lFU-OX-C1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfJ-cH-Ztd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>

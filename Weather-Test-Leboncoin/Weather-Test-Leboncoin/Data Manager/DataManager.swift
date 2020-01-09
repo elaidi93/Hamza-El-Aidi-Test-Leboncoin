@@ -16,6 +16,7 @@ class DataManager {
     func insertPrevisonLIst(weatherList: [WeatherDetailModel]) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        deletePrevisonLIst()
         let managedContext = appDelegate.persistentContainer.viewContext
         let userEntity = NSEntityDescription.entity(forEntityName: "WeatherDetail", in: managedContext)!
         
@@ -50,7 +51,7 @@ class DataManager {
         do {
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
-                let weatherDetail = WeatherDetailModel(date: data.value(forKey: "date") as! String, temperature: data.value(forKey: "temperture") as! Double, pluie: data.value(forKey: "pluie") as! Double, humidite: data.value(forKey: "humidite") as! Double, pression: data.value(forKey: "pression") as! Double, vent: data.value(forKey: "vent") as! Double, neige: data.value(forKey: "neige") as! String)
+                let weatherDetail = WeatherDetailModel(date: data.value(forKey: "date") as! String, temperature: data.value(forKey: "temperature") as! Double, pluie: data.value(forKey: "pluie") as! Double, humidite: data.value(forKey: "humidite") as! Double, pression: data.value(forKey: "pression") as! Double, vent: data.value(forKey: "vent") as! Double, neige: data.value(forKey: "neige") as! String)
                 previsionList.append(weatherDetail)
             }
         } catch {

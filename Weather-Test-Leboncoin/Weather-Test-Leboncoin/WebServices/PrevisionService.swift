@@ -18,7 +18,9 @@ class PrevisionService {
         AF.request(url).responseJSON { response in
             if response.response?.statusCode == 200 {
                 if let json = response.value as? NSDictionary {
-                    PrevisionJsonParse.shared.parse(prevesion: json)
+                    let parsed = PrevisionJsonParse.shared.parse(prevesion: json)
+                    DataManager.shared.insertPrevisonLIst(weatherList: parsed)
+                    callback(parsed)
                 }
             }
         }

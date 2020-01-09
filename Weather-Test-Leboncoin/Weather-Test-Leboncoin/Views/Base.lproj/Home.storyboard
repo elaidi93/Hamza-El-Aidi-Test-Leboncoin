@@ -27,31 +27,21 @@
                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
                                         </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNR-Qx-ett">
-                                        <rect key="frame" x="360" y="5" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="gkk-KP-sYh" kind="push" id="lvT-o2-oFf"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="9VZ-GT-w1b" secondAttribute="bottom" constant="10" id="7CU-uN-BGu"/>
                                     <constraint firstItem="9VZ-GT-w1b" firstAttribute="top" secondItem="cfr-Tx-gDv" secondAttribute="top" constant="10" id="LpP-TS-ksE"/>
-                                    <constraint firstAttribute="trailing" secondItem="KNR-Qx-ett" secondAttribute="trailing" constant="8" id="bqJ-Hu-BhJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="KNR-Qx-ett" secondAttribute="bottom" constant="10" id="hHY-fd-Kth"/>
-                                    <constraint firstItem="KNR-Qx-ett" firstAttribute="top" secondItem="cfr-Tx-gDv" secondAttribute="top" constant="5" id="mrs-b5-coH"/>
                                     <constraint firstItem="9VZ-GT-w1b" firstAttribute="centerX" secondItem="cfr-Tx-gDv" secondAttribute="centerX" id="yDb-49-5VT"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1w-QQ-hez">
                                 <rect key="frame" x="0.0" y="90" width="414" height="772"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-k6-kcS">
-                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                                 <color key="backgroundColor" red="0.90980392160000001" green="0.95294117649999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-k6-kcS">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96051472429999996" green="0.41780793669999999" blue="0.1660998464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,6 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="G2i-LW-05J"/>
                     <connections>
+                        <outlet property="tableView" destination="FTW-k6-kcS" id="LPv-lE-XhE"/>
                         <segue destination="gkk-KP-sYh" kind="push" identifier="detail_segue" id="ENq-4H-b21"/>
                     </connections>
                 </viewController>
@@ -107,7 +98,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lvT-o2-oFf"/>
-    </inferredMetricsTieBreakers>
 </document>

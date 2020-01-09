@@ -28,7 +28,7 @@ class PrevisionJsonParse {
                 let vent = ventDictionary["10m"] as! Double
                 let humidite = humiditeDictionary["2m"] as! Double
                 
-                let weatherDetail = WeatherDetailModel(date: date, temperature: temperature, pluie: pluie, humidite: humidite, pression: pression, vent: vent, neige: neige)
+                let weatherDetail = WeatherDetailModel(date: date, temperature: temperature - 273.15, pluie: pluie, humidite: humidite, pression: pression, vent: vent, neige: neige)
                 weatherDetails.append(weatherDetail)
             }
         }
